@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class Program
-{
-    static void Main()
+namespace eduHillel_HW16
+{   
+    class Program
     {
+        static void Main()
+        {
 
         Console.Write("Enter the source file path: ");
         string sourcePath = Console.ReadLine();
@@ -23,5 +25,6 @@ class Program
 
         File.Copy(sourcePath, destinationPath, true);
         Console.WriteLine("File copied successfully!");
+        }
     }
 }
